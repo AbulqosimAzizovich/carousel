@@ -30,7 +30,7 @@ prev.addEventListener("click", () => {
 
 let lst = document.querySelector(".slide_list_1")
 let rr = document.querySelector("#card_right");
-let a = document.querySelectorAll(".slide_list_1 #lsc");
+let a = document.querySelectorAll(".slide_list_1 #lsc .card__item");
 console.log(a.length);
 let count1 = 0;
 
