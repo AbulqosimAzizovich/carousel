@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+    overflow-x: hidden;
+}
+
+
+.slider {
+    max-width: 1800px;
+    height: 620px;
+    margin: 100px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide_list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    transition: all 0.3s ease;
+}
+
+
+#right,
+#left {
+    position: absolute;
+    z-index: 999999999;
+    top: 33%;
+    font-size: 34px;
+    padding: 0px 15px ;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+}
+
+#left {
+    left: 120px;
+}
+
+#left:active {
+    background-color: #ffffff7b;
+}
+
+#right:active {
+    background-color: #ffffff7b;
+}
+
+#right {
+    right: 120px;
+}

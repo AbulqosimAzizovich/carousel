@@ -1,0 +1,14 @@
+{
+  "name": "me",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abdulqosim",
+  "license": "ISC",
+  "description": "<hr>",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
