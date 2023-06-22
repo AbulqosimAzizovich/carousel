@@ -1,6 +1,13 @@
-const lsc = document.getElementById("lsc");
-const lsc1 = document.getElementById("lsc1");
-const aksiya = document.getElementById("aksiya");
+const lsc = document.getElementById("lsc"),
+  fourth = document.getElementById("fourth"),
+  lsc1 = document.getElementById("lsc1"),
+  aksiya = document.getElementById("aksiya"),
+  three = document.getElementById("three"),
+  wrppr = document.getElementById("wrppr"),
+  fifth = document.getElementById("fifth"),
+  sixth = document.getElementById("sixth"),
+  lastCard = document.getElementById("lastCard");
+
 
 function render() {
     let res = "";
@@ -43,11 +50,50 @@ function render() {
         </div>
         `;
     });
+
+    let k = ""
+
+    data_2.map((e) => {
+        k += `
+            <h2 class="font-medium text-[80px] w-[753px]">${e.h2}</h2>
+            <img src="${e.img}" alt="${e.h2}">
+        `;
+    })
+
+    let res1 = "";
+    data_3.map((e) => {
+
+        res1 += `
+                <div class="card__item w-[440px] h-[505px] rounded-[16px]">
+                    <img class="w-[100%]" src="${e.img}" alt="${e.title}" />
+                    <p class="text-[22px] text-[#3A3A3A] p-[10px]">
+                        ${e.title}
+                    <p>
+
+                    <div class="flex justify-between mt-[9px]  px-[10px] text-[#BABABA]">
+                        <p class="text-[16px]">${e.date}</p>
+                        <div class="flex items-center gap-[2px]">
+                            <p class="text-[16px]">${e.visitor}</p>
+                            <img class="" src="${e.visitor_img}" alt=${e.visitor}"">
+                        </div>
+                    </div>
+
+                </div>
+        `;
+    })
+
+
     
-    
+ 
     lsc.innerHTML = res;
     lsc1.innerHTML = res;
+    three.innerHTML = res;
+    sixth.innerHTML = res;
+    fourth.innerHTML = res;
     aksiya.innerHTML = ds;
+    fifth.innerHTML = res;
+    wrppr.innerHTML = k;
+    lastCard.innerHTML = res1;
 }
 
 render();
@@ -58,24 +104,24 @@ render();
 
 // const res = `
 
-//     <div class="card__item w-[350px] h-[420px] px-6 py-4">
-//                   <img src="./assets/images/t1.png" alt="tort1" />
-//                   <h3 class="text-center text-[20px] text-[#3A3A3A]">
-//                     Торт "Наполеон" классический
-//                   </h3>
+    // <div class="card__item w-[350px] h-[420px] px-6 py-4">
+    //               <img src="./assets/images/t1.png" alt="tort1" />
+    //               <h3 class="text-center text-[20px] text-[#3A3A3A]">
+    //                 Торт "Наполеон" классический
+    //               </h3>
 
-//                   <div class="flex justify-between mt-4 text-[#BABABA]">
-//                     <p>Купили более 300 раз</p>
-//                     <p>(96)❤️</p>
-//                   </div>
+    //               <div class="flex justify-between mt-4 text-[#BABABA]">
+    //                 <p>Купили более 300 раз</p>
+    //                 <p>(96)❤️</p>
+    //               </div>
 
-//                   <div class="flex items-center gap-4">
-//                     <h2 class="font-semibold text-[26px] text-[#3A3A3A]">
-//                       1 600 ₽
-//                     </h2>
-//                     <p class="text-[#BABABA]">1,25 кг.</p>
-//                   </div>
-//                 </div>
+    //               <div class="flex items-center gap-4">
+    //                 <h2 class="font-semibold text-[26px] text-[#3A3A3A]">
+    //                   1 600 ₽
+    //                 </h2>
+    //                 <p class="text-[#BABABA]">1,25 кг.</p>
+    //               </div>
+    //             </div>
 
 // `;
 let z = `<section id="aksiya">
@@ -85,3 +131,4 @@ let z = `<section id="aksiya">
           <img src="./assets/images/Group 101.png" alt="">
         </div>
 </section>`
+

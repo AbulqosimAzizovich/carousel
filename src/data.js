@@ -40,3 +40,37 @@ const data_1 = [
     img: "./assets/images/Group 101.png",
   },
 ];
+
+const data_2 = [
+    {
+        h2: "БЕНТО ДЕСЕРТЫ В БАНОЧКЕ",
+        img: "./assets/images/Group 102.png",
+    }
+]
+
+const data_3 = [
+  {
+    img: "./assets/images/last 1.png",
+    title:
+      "Зефир считается крайне полезным лакомством и рекомендован даже детям",
+    date: "01.02.2022",
+    visitor: "103",
+    visitor_img: "./assets/icons/eye.svg",
+  },
+  {
+    img: "./assets/images/last 1.png",
+    title:
+      "Зефир считается крайне полезным лакомством и рекомендован даже детям",
+    date: "01.02.2022",
+    visitor: "103",
+    visitor_img: "./assets/icons/eye.svg",
+  },
+  {
+    img: "./assets/images/last 2.png",
+    title:
+      "Зефир считается крайне полезным лакомством и рекомендован даже детям",
+    date: "01.02.2022",
+    visitor: "103",
+    visitor_img: "./assets/icons/eye.svg",
+  },
+];
