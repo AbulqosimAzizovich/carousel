@@ -1,220 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,600&display=swap"
-        rel="stylesheet">
-        <!-- Main css -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main css -->
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="">
-           <div class="wrapper container h-[60px] mx-auto flex justify-between items-center">
-            <div class="left flex items-center gap-[20px]">
-                <img src="./assets/icons/list.svg" class="w-5 h-4 cursor-pointer" alt="menu">
-                <ul class="flex items-center gap-[15px]">
-                    <li><a href="#" class="cursor-pointer hover:text-sky-500">Каталог</a></li>
-                    <li><a href="#" class="cursor-pointer hover:text-sky-500">Торты</a></li>
-                    <li><a href="#" class="cursor-pointer hover:text-sky-500">Десерты в баночках</a></li>
-                    <li><a href="#" class="cursor-pointer hover:text-sky-500">Покупателям</a></li>
-                </ul>
+      <nav class="">
+        <div
+          class="wrapper container h-[60px] mx-auto flex justify-between items-center"
+        >
+          <div class="left flex items-center gap-[20px]">
+            <img
+              src="./assets/icons/list.svg"
+              class="w-5 h-4 cursor-pointer"
+              alt="menu"
+            />
+            <ul class="flex items-center gap-[15px]">
+              <li>
+                <a href="#" class="cursor-pointer hover:text-sky-500"
+                  >Каталог</a
+                >
+              </li>
+              <li>
+                <a href="#" class="cursor-pointer hover:text-sky-500">Торты</a>
+              </li>
+              <li>
+                <a href="#" class="cursor-pointer hover:text-sky-500"
+                  >Десерты в баночках</a
+                >
+              </li>
+              <li>
+                <a href="#" class="cursor-pointer hover:text-sky-500"
+                  >Покупателям</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <img
+            src="./assets/icons/NapoleonCake.svg"
+            class="cursor-pointer"
+            alt="NapoleonCake"
+          />
+
+          <div class="right flex items-center gap-[80px]">
+            <div class="right_one">
+              <p
+                class="font-normal text-[30px] cursor-pointer hover:text-sky-500"
+              >
+                8 800 200-95-70
+              </p>
+              <p
+                class="mt-[-10px] font-light cursor-pointer hover:text-sky-600"
+              >
+                Ежедневно с 8:00 до 20:00
+              </p>
             </div>
 
-            <img src="./assets/icons/NapoleonCake.svg" class="cursor-pointer" alt="NapoleonCake">
-
-            <div class="right flex items-center gap-[80px]">
-                <div class="right_one">
-                    <p class="font-normal text-[30px] cursor-pointer hover:text-sky-500">8 800 200-95-70</p>
-                    <p class="mt-[-10px] font-light cursor-pointer hover:text-sky-600">Ежедневно с 8:00 до 20:00</p>
-                </div>
-
-                <div class="rigth_two flex items-center gap-[30px]">
-                    <img class="cursor-pointer" src="./assets/icons/phone.svg" alt="phone">
-                    <img class="cursor-pointer" src="./assets/icons/search.svg" alt="search">
-                    <img class="cursor-pointer" src="./assets/icons/person.svg" alt="person">
-                    <img class="cursor-pointer" src="./assets/icons/like.svg" alt="like">
-                    <img class="cursor-pointer" src="./assets/icons/bag.svg" alt="bag">
-                </div>
+            <div class="rigth_two flex items-center gap-[30px]">
+              <img
+                class="cursor-pointer"
+                src="./assets/icons/phone.svg"
+                alt="phone"
+              />
+              <img
+                class="cursor-pointer"
+                src="./assets/icons/search.svg"
+                alt="search"
+              />
+              <img
+                class="cursor-pointer"
+                src="./assets/icons/person.svg"
+                alt="person"
+              />
+              <img
+                class="cursor-pointer"
+                src="./assets/icons/like.svg"
+                alt="like"
+              />
+              <img
+                class="cursor-pointer"
+                src="./assets/icons/bag.svg"
+                alt="bag"
+              />
             </div>
-           </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section id="intro" class="mt-[-80px] mb-[60px]">
-            <div class="container mx-auto">
-                <div class="slider mb-[-150px]">
-                  <div class="slide_list">
-                    <img src="./assets/images/carousel.jpg" alt="carousel">
-                    <img src="./assets/images/carousel.jpg" alt="carousel">
-                    <img src="./assets/images/carousel.jpg" alt="carousel">
-                  </div>
-      
-                  <span id="left" class="cursor-pointer">
-                    <
-                  </span>
-      
-                  <span id="right" class="cursor-pointer">
-                    >
-                  </span>
-                </div>
-                <div class="up flex items-center gap-2">
-                    <img src="./assets/icons/up.svg" alt="up">
-                    <p>Наверх</p>
-                </div>
-              </div>
-        </section>
-
-        <section id="hero">
-            <div class="container mx-auto">
-                <p class="mb-8 font-medium text-[25px] text-[#3A3A3A]">Новинки</p>
-                <div class="card flex items-center justify-between">
-                  
-                    <div class="slide_list_1 relative overflow-hidden">
-                        <div id="lsc" class="flex flex-wrap items-center gap-[25px]">
-                            <div class="card__item w-[350px] h-[420px] px-6 py-4  ">
-                                <img src="./assets/images/t1.png" alt="tort1">
-                                <h3 class="text-center text-[20px] text-[#3A3A3A]">Торт "Наполеон" классический</h3>
-                                
-                                <div class="flex justify-between mt-4 text-[#BABABA]">
-                                    <p>Купили более 300 раз</p>
-                                    <p>(96)❤️</p>
-                                </div>
-        
-                                <div class="flex items-center gap-4">
-                                    <h2 class="font-semibold text-[26px] text-[#3A3A3A]">1 600 ₽</h2>
-                                    <p class="text-[#BABABA]">1,25 кг.</p>
-                                </div>
-                            </div>
-        
-                            <div class="card__item w-[350px] h-[420px] px-6 py-4  ">
-                                <img src="./assets/images/t1.png" alt="tort1">
-                                <h3 class="text-center text-[20px] text-[#3A3A3A]">Торт "Наполеон" классический</h3>
-                                
-                                <div class="flex justify-between mt-4 text-[#BABABA]">
-                                    <p>Купили более 300 раз</p>
-                                    <p>(96)❤️</p>
-                                </div>
-        
-                                <div class="flex items-center gap-4">
-                                    <h2 class="font-semibold text-[26px] text-[#3A3A3A]">1 600 ₽</h2>
-                                    <p class="text-[#BABABA]">1,25 кг.</p>
-                                </div>
-                            </div>
-        
-                            <div class="card__item w-[350px] h-[420px] px-6 py-4  ">
-                                <img src="./assets/images/t1.png" alt="tort1">
-                                <h3 class="text-center text-[20px] text-[#3A3A3A]">Торт "Наполеон" классический</h3>
-                                
-                                <div class="flex justify-between mt-4 text-[#BABABA]">
-                                    <p>Купили более 300 раз</p>
-                                    <p>(96)❤️</p>
-                                </div>
-        
-                                <div class="flex items-center gap-4">
-                                    <h2 class="font-semibold text-[26px] text-[#3A3A3A]">1 600 ₽</h2>
-                                    <p class="text-[#BABABA]">1,25 кг.</p>
-                                </div>
-                            </div>
-        
-                            <div class="card__item w-[350px] h-[420px] px-6 py-4  ">
-                                <img src="./assets/images/t1.png" alt="tort1">
-                                <h3 class="text-center text-[20px] text-[#3A3A3A]">Торт "Наполеон" классический</h3>
-                                
-                                <div class="flex justify-between mt-4 text-[#BABABA]">
-                                    <p>Купили более 300 раз</p>
-                                    <p>(96)❤️</p>
-                                </div>
-        
-                                <div class="flex items-center gap-4">
-                                    <h2 class="font-semibold text-[26px] text-[#3A3A3A]">1 600 ₽</h2>
-                                    <p class="text-[#BABABA]">1,25 кг.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- <div id="lsc" class="flex flex-wrap items-center gap-[25px]">
-                            <div class="card__item w-[350px] h-[420px] px-6 py-4  ">
-                                <img src="./assets/images/t1.png" alt="tort1">
-                                <h3 class="text-center text-[20px] text-[#3A3A3A]">Торт "Наполеон" классический</h3>
-                                
-                                <div class="flex justify-between mt-4 text-[#BABABA]">
-                                    <p>Купили более 300 раз</p>
-                                    <p>(96)❤️</p>
-                                </div>
-        
-                                <div class="flex items-center gap-4">
-                                    <h2 class="font-semibold text-[26px] text-[#3A3A3A]">1 600 ₽</h2>
-                                    <p class="text-[#BABABA]">1,25 кг.</p>
-                                </div>
-                            </div>
-        
-                            <div class="card__item w-[350px] h-[420px] px-6 py-4  ">
-                                <img src="./assets/images/t1.png" alt="tort1">
-                                <h3 class="text-center text-[20px] text-[#3A3A3A]">Торт "Наполеон" классический</h3>
-                                
-                                <div class="flex justify-between mt-4 text-[#BABABA]">
-                                    <p>Купили более 300 раз</p>
-                                    <p>(96)❤️</p>
-                                </div>
-        
-                                <div class="flex items-center gap-4">
-                                    <h2 class="font-semibold text-[26px] text-[#3A3A3A]">1 600 ₽</h2>
-                                    <p class="text-[#BABABA]">1,25 кг.</p>
-                                </div>
-                            </div>
-        
-                            <div class="card__item w-[350px] h-[420px] px-6 py-4  ">
-                                <img src="./assets/images/t1.png" alt="tort1">
-                                <h3 class="text-center text-[20px] text-[#3A3A3A]">Торт "Наполеон" классический</h3>
-                                
-                                <div class="flex justify-between mt-4 text-[#BABABA]">
-                                    <p>Купили более 300 раз</p>
-                                    <p>(96)❤️</p>
-                                </div>
-        
-                                <div class="flex items-center gap-4">
-                                    <h2 class="font-semibold text-[26px] text-[#3A3A3A]">1 600 ₽</h2>
-                                    <p class="text-[#BABABA]">1,25 кг.</p>
-                                </div>
-                            </div>
-        
-                            <div class="card__item w-[350px] h-[420px] px-6 py-4  ">
-                                <img src="./assets/images/t1.png" alt="tort1">
-                                <h3 class="text-center text-[20px] text-[#3A3A3A]">Торт "Наполеон" классический</h3>
-                                
-                                <div class="flex justify-between mt-4 text-[#BABABA]">
-                                    <p>Купили более 300 раз</p>
-                                    <p>(96)❤️</p>
-                                </div>
-        
-                                <div class="flex items-center gap-4">
-                                    <h2 class="font-semibold text-[26px] text-[#3A3A3A]">1 600 ₽</h2>
-                                    <p class="text-[#BABABA]">1,25 кг.</p>
-                                </div>
-                            </div>
-                        </div>    -->
-                    </div>
-                    
-                    <div id="card_right" class="w-9 h-9 bg-[#3A3A3A] rounded-[50%] px-3 py-2 relative right-11 cursor-pointer" >
-                        <img src="./assets/icons/right.svg"alt="right">
-                    </div>
-                </div>
+      <section id="intro" class="mt-[-80px] mb-[60px]">
+        <div class="container mx-auto">
+          <div class="slider mb-[-150px]">
+            <div class="slide_list">
+              <img src="./assets/images/carousel.jpg" alt="carousel" />
+              <img src="./assets/images/carousel.jpg" alt="carousel" />
+              <img src="./assets/images/carousel.jpg" alt="carousel" />
             </div>
-        </section>
+
+            <span id="left" class="cursor-pointer"> < </span>
+
+            <span id="right" class="cursor-pointer"> > </span>
+          </div>
+          <div class="up flex items-center gap-2">
+            <img src="./assets/icons/up.svg" alt="up" />
+            <p>Наверх</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="hero">
+        <div class="container mx-auto">
+          
+          <div class="flex justify-between mt-[100px] ">
+            <p class="mb-8 font-medium text-[25px] text-[#3A3A3A]">Новинки</p>
+            <p class="text-[26px] text-[#3A3A3A] items-center font-light">Все > </p>
+          </div>
+
+          <div class="card flex items-center justify-between">
+            <div class="slide_list_1 relative overflow-hidden">
+              <div id="lsc" class="flex items-center gap-10">
+              </div>      
+            </div>
+
+            <div id="card_right" class="w-9 h-9 bg-[#3A3A3A] rounded-[50%] px-3 py-2 relative right-11 cursor-pointer" >
+              <img src="./assets/icons/right.svg"alt="right">
+            </div>
+          </div>
+
+          <div class="flex justify-between mt-[100px] ">
+            <p class="tracking-[2.6px] text-[26px] text-[#3A3A3A]">Традиционные торты</p>
+            <p class="text-[26px] text-[#3A3A3A] items-center font-light">Все > </p>
+          </div>
+
+          <div class="card flex items-center justify-between mt-5">
+            <div class="slide_list_1 relative overflow-hidden">
+              <div id="lsc1" class="flex items-center gap-10">
+              </div>      
+            </div>
+
+            <div id="card_right" class="w-9 h-9 bg-[#3A3A3A] rounded-[50%] px-3 py-2 relative right-11 cursor-pointer" >
+              <img src="./assets/icons/right.svg"alt="right">
+            </div>
+          </div>
+
+          
+        </div>
+      </section>
+
+      <section id="aksiya" class="mt-[100px]">
+        <div class="container mx-auto my-auto ">
+
+        </div>
+      </section>
+
     </main>
-</body>
-<script src="./script.js"></script>
+  </body>
+  <script src="./data.js"></script>
+  <script src="./second.js"></script>
+  <script src="./script.js"></script>
 </html>
+
